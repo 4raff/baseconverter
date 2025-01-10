@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #ff5252;
+    margin-bottom: 20px;
+}
+
+.converter {
+    background-color: #4d4d4d;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+input, select, textarea {
+    background-color: #fff;
+    color: #000;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button#convertBtn {
+    background-color: #ff884d;
+    color: #fff;
+}
+
+button#resetBtn {
+    background-color: #bfbfbf;
+    color: #000;
+}
+.invalid-input {
+    border: 2px solid red;
+    animation: shake 0.3s;
+    background-color: #ffcccc; /* Warna latar belakang merah muda */
+}
+
+textarea.invalid-input {
+    background-color: #ffcccc;
+}
+
+/* Animasi goyang (shake) */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
